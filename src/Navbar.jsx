@@ -96,12 +96,35 @@ const Navbar = () => {
               >
                 Qəbula yazıl
               </NavLink>
-              {user ? (
-                <>
+              <div className="account-settings">
+                {user ? (
+                  <>
+                    <NavLink
+                      to="/hospital/account"
+                      className={`account-link ${
+                        location.pathname === "/hospital/account"
+                          ? "active-account"
+                          : ""
+                      }`}
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Şəxsi kabinet
+                    </NavLink>
+                    <button
+                      className="logout-btn"
+                      onClick={() => {
+                        logout();
+                        setMenuOpen(false);
+                      }}
+                    >
+                      Çıxış
+                    </button>
+                  </>
+                ) : (
                   <NavLink
-                    to="/hospital/account"
+                    to="/hospital/auth"
                     className={`account-link ${
-                      location.pathname === "/hospital/account"
+                      location.pathname === "/hospital/auth"
                         ? "active-account"
                         : ""
                     }`}
@@ -109,29 +132,8 @@ const Navbar = () => {
                   >
                     Şəxsi kabinet
                   </NavLink>
-                  <button
-                    className="logout-btn"
-                    onClick={() => {
-                      logout();
-                      setMenuOpen(false);
-                    }}
-                  >
-                    Çıxış
-                  </button>
-                </>
-              ) : (
-                <NavLink
-                  to="/hospital/auth"
-                  className={`account-link ${
-                    location.pathname === "/hospital/auth"
-                      ? "active-account"
-                      : ""
-                  }`}
-                  onClick={() => setMenuOpen(false)}
-                >
-                  Şəxsi kabinet
-                </NavLink>
-              )}
+                )}
+              </div>
             </div>
           </div>
         </div>
