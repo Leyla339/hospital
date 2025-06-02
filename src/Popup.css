@@ -1,0 +1,72 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  font-family: "Segoe UI", sans-serif;
+  animation: fadeIn 0.3s ease-in-out;
+  text-align: center;
+}
+
+.popup-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #007bff;
+}
+
+.popup-content h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 24px;
+}
+
+.popup-content p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.popup-content b {
+  color: #000;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  width: 32px;
+  height: 32px;
+  font-size: 29px;
+  padding-top: 2px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.close-btn:hover {
+  background: #cc0000;
+}

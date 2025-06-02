@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.news-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.news-container h1 {
+  font: 600 34px Poppins;
+  color: #54afe6;
+  margin: 30px 0;
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.news-card {
+  display: flex;
+  gap: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  align-items: center;
+  padding: 15px;
+}
+.news-card a {
+  font: 500 16px Poppins;
+  color: white;
+  text-decoration: none;
+  background-color: #54afe6;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.news-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-info {
+  padding: 25px;
+}
+
+.news-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.news-title {
+  margin: 0 0 8px;
+  color: #0077cc;
+}
+
+.news-date {
+  color: #666;
+  font: 500 14px Poppins;
+  margin-bottom: 12px;
+}
+
+.news-content {
+  color: #333;
+  font: 500 16px Poppins;
+}

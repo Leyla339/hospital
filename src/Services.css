@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.services h1 {
+  font: 600 35px Poppins;
+  color: #183e9f;
+  text-align: center;
+  margin-top: 40px;
+}
+.services h3 {
+  font: 500 18px Poppins;
+  text-align: center;
+  margin: 10px 0 60px 0;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+.service-card {
+  width: 350px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  display: flex;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.service-icon {
+  width: 150px;
+  font-size: 45px;
+}
+.service-icon.heart {
+  color: red;
+}
+.service-icon.child {
+  color: blue;
+}
+.service-icon.brain {
+  color: rgb(254, 162, 179);
+}
+.service-icon.doctor {
+  color: rgb(152, 214, 235);
+}
+.service-icon.skeleton {
+  color: orange;
+}
+.service-icon.eye {
+  color: rgb(28, 157, 255);
+}
+.service-icon.hospital {
+  color: rgb(245, 255, 57);
+}
+.service-icon.xray {
+  color: rgb(91, 88, 88);
+}
+.service-icon.medicines {
+  color: blueviolet;
+}
+.service-icon.hearing {
+  color: burlywood;
+}
+.service-icon.blood {
+  color: red;
+}
+.service-icon.science {
+  color: violet;
+}
+.service-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.service-content h2 {
+  font: 500 18px Poppins;
+  color: #183e9f;
+}
+.service-content p {
+  font: 400 16px Poppins;
+  color: #183e9f;
+  height: 70px;
+}
+.service-content a {
+  font: 400 14px Poppins;
+  color: #183e9f;
+  border: 1px solid #183e9f;
+  padding: 5px;
+  border-radius: 5px;
+  width: fit-content;
+  text-decoration: none;
+}
+.service-content a:hover {
+  background-color: #54afe6;
+}

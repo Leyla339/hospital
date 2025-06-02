@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.navbar {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: white;
+}
+.logo {
+  width: 50px;
+}
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.nav-links a {
+  font: 500 20px Poppins;
+  text-decoration: none;
+  color: black;
+}
+.nav-links a:hover {
+  color: #183e9f;
+}
+.nav-links .active {
+  color: #183e9f;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 10px;
+}
+.account-link {
+  border: 1px solid #183e9f;
+  padding: 10px;
+  border-radius: 10px;
+}
+.active-account {
+  background-color: #54afe6;
+  border-color: #54afe6;
+  text-decoration: none !important;
+}

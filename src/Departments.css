@@ -1,0 +1,61 @@
+.slick-track {
+  padding: 40px 0;
+}
+.slick-list {
+  display: flex;
+  gap: 20px;
+}
+.slick-slide {
+  padding-right: 15px;
+}
+.card {
+  width: 200px;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  padding: 20px;
+  height: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  text-align: center;
+}
+.card h1 {
+  font: 600 24px Poppins;
+  margin: 10px 0;
+}
+.card p {
+  font: 400 14px Poppins;
+  width: 250px;
+  margin: 0 auto;
+}
+.card-icon {
+  color: #183e9f;
+  font-size: 50px;
+}
+
+.card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #183e9f !important;
+}
+.more-service {
+  background-color: #183e9f;
+  color: white;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  width: fit-content;
+  text-decoration: none;
+  font: 400 14px Poppins;
+  /* text-align: center; */
+  cursor: pointer;
+}
+.more-btn {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.account {
+  display: flex;
+  justify-content: space-between;
+}
+.left-side {
+  width: 30%;
+}
+.right-side {
+  width: 70%;
+}
+.left-header {
+  margin: 50px 0;
+  font: 600 30px Poppins;
+  color: #183e9f;
+}
+.left-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.left-links a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font: 500 20px Poppins;
+  color: #183e9f;
+  text-decoration: none;
+}
+.log-out {
+  background-color: #54afe6;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  font: 500 16px Poppins;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.log-out:hover {
+  background-color: #183e9f;
+}
+
+.right-side h1 {
+  font: 600 30px Poppins;
+  color: #183e9f;
+}
+.right-side {
+  padding: 40px 0;
+}
+.hospital-name {
+  font: 700 24px Poppins;
+  color: #183e9f;
+  margin-bottom: 30px;
+}
+.stats {
+  display: flex;
+  gap: 30px;
+  margin: 30px 0;
+}
+.stat-box {
+  background-color: #f1f4ff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 130px;
+  text-align: center;
+}
+.stat-count {
+  font: 600 28px Poppins;
+  color: #183e9f;
+}
+.stat-label {
+  font: 500 14px Poppins;
+  color: #555;
+}
+.appointments h2 {
+  font: 600 24px Poppins;
+  color: #183e9f;
+  margin-bottom: 15px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  text-align: left;
+  padding: 12px;
+  font: 400 16px Poppins;
+}
+th {
+  background-color: #f0f4fb;
+  color: #183e9f;
+}
+tr:nth-child(even) {
+  background-color: #fafbff;
+}
+.status-badge {
+  background-color: #e0f3ff;
+  color: #007acc;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+}
