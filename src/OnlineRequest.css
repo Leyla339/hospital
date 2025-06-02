@@ -48,3 +48,51 @@
 .request-form button:hover {
   background-color: #0052aa;
 }
+
+
+@media (max-width: 768px) {
+  .request-page {
+    padding: 20px;
+    margin: 30px 15px;
+  }
+
+  .request-page h1 {
+    font-size: 24px;
+  }
+
+  .request-page p {
+    font-size: 14px;
+  }
+
+  .request-form input,
+  .request-form select,
+  .request-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .request-page {
+    padding: 15px;
+  }
+
+  .request-page h1 {
+    font-size: 20px;
+  }
+
+  .request-page p {
+    font-size: 13px;
+  }
+
+  .request-form input,
+  .request-form select,
+  .request-form button {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .request-form {
+    gap: 10px;
+  }
+}

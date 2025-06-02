@@ -57,3 +57,49 @@
   outline-color: #183e9f;
   font: 400 13px Poppins;
 }
+
+@media (max-width: 992px) {
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .contact-form {
+    width: 80%;
+  }
+
+  .contact-header-info {
+    width: 90%;
+  }
+
+  .map-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-page h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .contact-form h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+
+  .contact-form button {
+    font-size: 14px;
+  }
+
+  .contact-header-info,
+  .contact-info p {
+    font-size: 14px;
+  }
+}

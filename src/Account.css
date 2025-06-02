@@ -6,9 +6,12 @@
 }
 .left-side {
   width: 30%;
+  height: fit-content;
 }
 .right-side {
   width: 70%;
+  display: flex;
+  flex-direction: column;
 }
 .left-header {
   margin: 50px 0;
@@ -103,4 +106,170 @@ tr:nth-child(even) {
   padding: 6px 12px;
   border-radius: 10px;
   font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .account {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .left-side {
+    width: 35%;
+    min-width: 150px;
+  }
+
+  .right-side {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-header {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .left-links {
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .left-links a {
+    font-size: 16px;
+  }
+
+  .log-out {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .hospital-name,
+  .appointments h2,
+  .right-side h1 {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .stats {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .stat-box {
+    padding: 15px;
+  }
+
+  .appointments {
+    width: 90%;
+    margin-top: 30px;
+    margin-left: -200px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    white-space: nowrap;
+  }
+
+  .status-badge {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .account {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .left-header {
+    font-size: 18px;
+    margin: 30px 0 20px 0;
+    text-align: center;
+  }
+
+  .left-links {
+    gap: 12px;
+    align-items: center;
+  }
+
+  .left-links a {
+    font-size: 14px;
+  }
+
+  .log-out {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px 12px;
+    margin-top: 15px;
+  }
+
+  .right-side {
+    padding: 20px 0 0 0;
+  }
+
+  .right-side h1,
+  .hospital-name,
+  .appointments h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .stats {
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .stat-box {
+    width: 100px;
+    padding: 12px;
+  }
+
+  .stat-count {
+    font-size: 22px;
+  }
+
+  .stat-label {
+    font-size: 12px;
+  }
+
+  .appointments {
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+
+  table {
+    font-size: 13px;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  th,
+  td {
+    padding: 6px 8px;
+    white-space: nowrap;
+  }
+
+  .status-badge {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
 }

@@ -48,7 +48,7 @@ const About = () => {
                 ))}
               </div>
             </div>
-            <div>
+            <div className="about-us"> 
               <h2> Biz kimik?</h2>
               <p>
                 Biz — sağlamlığınızı hər şeydən üstün tutan peşəkar tibbi

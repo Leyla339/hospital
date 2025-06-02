@@ -50,7 +50,7 @@
   color: #000;
 }
 
-.close-btn {
+.popup-content .close-btn {
   position: absolute;
   top: 15px;
   right: 20px;
@@ -67,6 +67,6 @@
   transition: background 0.3s;
 }
 
-.close-btn:hover {
+.popup-content .close-btn:hover {
   background: #cc0000;
 }

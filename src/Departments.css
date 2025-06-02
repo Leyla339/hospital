@@ -52,10 +52,43 @@
   width: fit-content;
   text-decoration: none;
   font: 400 14px Poppins;
-  /* text-align: center; */
   cursor: pointer;
 }
 .more-btn {
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .card {
+    height: auto;
+    padding: 15px;
+  }
+
+  .card h1 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 12px;
+    width: 200px;
+  }
+
+  .card-icon {
+    font-size: 40px;
+  }
+
+  .slick-track {
+    padding: 20px 0;
+  }
+
+  .slick-list {
+    gap: 10px;
+  }
+
+  .more-service {
+    padding: 10px 20px;
+    font-size: 13px;
+    border-radius: 15px;
+  }
 }

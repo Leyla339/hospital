@@ -77,3 +77,24 @@
   cursor: pointer;
   text-decoration: underline;
 }
+
+
+@media (max-width: 768px) {
+  .auth {
+    padding: 20px;
+  }
+
+  .auth-main {
+    width: 70%;
+  }
+
+  .form-wrapper form input,
+  .form-wrapper button {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .form-wrapper form label {
+    font-size: 24px;
+  }
+}

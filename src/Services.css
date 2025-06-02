@@ -93,3 +93,9 @@
 .service-content a:hover {
   background-color: #54afe6;
 }
+
+@media (max-width: 1235px) {
+  .service-cards {
+    justify-content: space-evenly ;
+  }
+}

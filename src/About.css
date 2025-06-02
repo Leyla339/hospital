@@ -100,3 +100,84 @@
 .dot.active {
   background-color: #1e3a8a;
 }
+
+
+
+@media (max-width: 1190px) {
+  .hospital-info {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+  }
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hospital-info img,
+  .slideshow-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .hospital-info p {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .hospital-info h2 {
+    font-size: 24px;
+  }
+
+  .information {
+    flex-direction: column;
+    gap: 50px;
+    margin: 40px 0;
+    align-items: center;
+  }
+
+  .info2 h2,
+  .info3 h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .info2 li,
+  .info3 li {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .about h1 {
+    font-size: 24px;
+    margin: 30px auto;
+  }
+
+  .hospital-info p {
+    font-size: 14px;
+  }
+
+  .hospital-info h2 {
+    font-size: 20px;
+  }
+
+  .info2 h2,
+  .info3 h2 {
+    font-size: 20px;
+  }
+
+  .info2 li,
+  .info3 li {
+    font-size: 14px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+}

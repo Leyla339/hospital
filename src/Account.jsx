@@ -66,55 +66,55 @@ const Account = () => {
       </div>
 
       <div className="right-side">
-        <div className="container">
-          <h1>
-            Xoş gəldiniz, {currentUser.name} {currentUser.surname}
-          </h1>
+        {/* <div className="container"> */}
+        <h1>
+          Xoş gəldiniz, {currentUser.name} {currentUser.surname}
+        </h1>
 
-          <div className="stats">
-            <div className="stat-box">
-              <p className="stat-count">3</p>
-              <p className="stat-label">Randevularım</p>
-            </div>
-            <div className="stat-box">
-              <p className="stat-count">0</p>
-              <p className="stat-label">Test nəticələrim</p>
-            </div>
-            <div className="stat-box">
-              <p className="stat-count">0</p>
-              <p className="stat-label">Diaqnozlarım</p>
-            </div>
-            <div className="stat-box">
-              <p className="stat-count">0</p>
-              <p className="stat-label">Müalicəm</p>
-            </div>
+        <div className="stats">
+          <div className="stat-box">
+            <p className="stat-count">3</p>
+            <p className="stat-label">Randevularım</p>
           </div>
+          <div className="stat-box">
+            <p className="stat-count">0</p>
+            <p className="stat-label">Test nəticələrim</p>
+          </div>
+          <div className="stat-box">
+            <p className="stat-count">0</p>
+            <p className="stat-label">Diaqnozlarım</p>
+          </div>
+          <div className="stat-box">
+            <p className="stat-count">0</p>
+            <p className="stat-label">Müalicəm</p>
+          </div>
+        </div>
+        {/* </div> */}
 
-          <div className="appointments">
-            <h2>Tədbir görüşlərim</h2>
-            <table>
-              <thead>
-                <tr>
-                  <th>Həkim</th>
-                  <th>Tarix</th>
-                  <th>Saat</th>
-                  <th>Status</th>
+        <div className="appointments">
+          <h2>Tədbir görüşlərim</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Həkim</th>
+                <th>Tarix</th>
+                <th>Saat</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              {appointments.map((appt, index) => (
+                <tr key={index}>
+                  <td>{appt.doctor}</td>
+                  <td>{appt.date}</td>
+                  <td>{appt.time}</td>
+                  <td>
+                    <span className="status-badge">{appt.status}</span>
+                  </td>
                 </tr>
-              </thead>
-              <tbody>
-                {appointments.map((appt, index) => (
-                  <tr key={index}>
-                    <td>{appt.doctor}</td>
-                    <td>{appt.date}</td>
-                    <td>{appt.time}</td>
-                    <td>
-                      <span className="status-badge">{appt.status}</span>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
     </div>

@@ -70,3 +70,64 @@
   color: #333;
   font: 500 16px Poppins;
 }
+
+
+@media (max-width: 768px) {
+  .news-container {
+    padding: 15px;
+  }
+
+  .news-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .news-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .news-info {
+    padding: 20px 10px;
+  }
+
+  .news-title {
+    font-size: 22px;
+  }
+
+  .news-content {
+    font-size: 15px;
+  }
+
+  .news-card a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .news-container h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .news-card {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .news-info {
+    padding: 10px;
+  }
+
+  .news-content,
+  .news-date {
+    font-size: 14px;
+  }
+
+  .news-card a {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -96,7 +96,7 @@ const Home = () => {
           <div className="section3">
             <div className="container">
               <div className="about-section">
-                <div>
+                <div className="about-top">
                   <h2>Haqqımızda</h2>
                   <p className="about-info">
                     Klinikamız 2020-cu ildən fəaliyyət göstərir və məqsədimiz
