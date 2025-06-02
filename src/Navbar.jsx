@@ -1,18 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./Navbar.css";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import logo from "./img/logo.svg";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { IoMdClose } from "react-icons/io"; // bağlama ikonu üçün
+import { IoMdClose } from "react-icons/io";
+import { AuthContext } from "./AuthContext"; // kontekstə daxil ol
 
 const Navbar = () => {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const isAccountActive =
-    location.pathname === "/register" ||
-    location.pathname === "/log-in" ||
-    location.pathname === "/account";
+  const { user, logout } = useContext(AuthContext); // istifadəçi və logout funksiyası
 
   return (
     <div className="navbar">
@@ -30,14 +27,35 @@ const Navbar = () => {
               <NavLink to="/hospital/news">Xəbərlər</NavLink>
               <NavLink to="/hospital/contact">Əlaqə</NavLink>
               <NavLink to="/hospital/online-request">Qəbula yazıl</NavLink>
-              <NavLink
-                to="/hospital/auth"
-                className={`account-link ${
-                  isAccountActive ? "active-account" : ""
-                }`}
-              >
-                Şəxsi kabinet
-              </NavLink>
+
+              {user ? (
+                <>
+                  <NavLink
+                    to="/hospital/account"
+                    className={`account-link ${
+                      location.pathname === "/hospital/account"
+                        ? "active-account"
+                        : ""
+                    }`}
+                  >
+                    Şəxsi kabinet
+                  </NavLink>
+                  <button className="logout-btn" onClick={logout}>
+                    Çıxış
+                  </button>
+                </>
+              ) : (
+                <NavLink
+                  to="/hospital/auth"
+                  className={`account-link ${
+                    location.pathname === "/hospital/auth"
+                      ? "active-account"
+                      : ""
+                  }`}
+                >
+                  Şəxsi kabinet
+                </NavLink>
+              )}
             </div>
 
             <div className="burger-menu" onClick={() => setMenuOpen(true)}>
@@ -78,15 +96,42 @@ const Navbar = () => {
               >
                 Qəbula yazıl
               </NavLink>
-              <NavLink
-                to="/hospital/auth"
-                className={`account-link ${
-                  isAccountActive ? "active-account" : ""
-                }`}
-                onClick={() => setMenuOpen(false)}
-              >
-                Şəxsi kabinet
-              </NavLink>
+              {user ? (
+                <>
+                  <NavLink
+                    to="/hospital/account"
+                    className={`account-link ${
+                      location.pathname === "/hospital/account"
+                        ? "active-account"
+                        : ""
+                    }`}
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    Şəxsi kabinet
+                  </NavLink>
+                  <button
+                    className="logout-btn"
+                    onClick={() => {
+                      logout();
+                      setMenuOpen(false);
+                    }}
+                  >
+                    Çıxış
+                  </button>
+                </>
+              ) : (
+                <NavLink
+                  to="/hospital/auth"
+                  className={`account-link ${
+                    location.pathname === "/hospital/auth"
+                      ? "active-account"
+                      : ""
+                  }`}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Şəxsi kabinet
+                </NavLink>
+              )}
             </div>
           </div>
         </div>

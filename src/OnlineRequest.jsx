@@ -11,6 +11,7 @@ const OnlineRequest = () => {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
+    email: "",
     doctorId: "",
     doctorName: "",
     day: "",
@@ -75,6 +76,7 @@ const OnlineRequest = () => {
         setFormData({
           name: "",
           phone: "",
+          email: "",
           doctorId: "",
           doctorName: "",
           day: "",
@@ -106,6 +108,14 @@ const OnlineRequest = () => {
           name="phone"
           placeholder="Əlaqə nömrəsi"
           value={formData.phone}
+          onChange={handleChange}
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email ünvanı"
+          value={formData.email}
           onChange={handleChange}
           required
         />

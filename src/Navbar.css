@@ -55,6 +55,20 @@
   border-color: #54afe6;
   text-decoration: none !important;
 }
+.logout-btn {
+  background: none;
+  border: none;
+  color: #f00;
+  cursor: pointer;
+  /* margin-left: 15px; */
+  border: 1px solid #f00;
+  padding: 5px;
+  border-radius: 5px;
+  font: 400 20px Poppins;
+}
+.logout-btn:hover{
+  background-color: rgba(255, 0, 0, 0.336);
+}
 .burger-menu {
   display: none;
   cursor: pointer;

@@ -284,6 +284,9 @@
   .info-card {
     width: 250px;
   }
+  .info-all{
+    justify-content: space-evenly;
+  }
 }
 .promotions {
   display: flex;

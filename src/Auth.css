@@ -26,7 +26,7 @@
 .form-wrapper form {
   position: absolute;
   width: 100%;
-  top: 0;
+  top: -35px;
   left: 0;
   padding-top: 60px;
   display: flex;
