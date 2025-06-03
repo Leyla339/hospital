@@ -31,7 +31,7 @@ const Doctors = () => {
       ? doctors
       : doctors.filter(
           (doc) =>
-            doc.department?.trim().toLowerCase() ===
+            doc.department.trim().toLowerCase() ===
             selectedDepartment.trim().toLowerCase()
         );
 
@@ -49,8 +49,8 @@ const Doctors = () => {
           departments.map((dept) => {
             const deptDoctors = doctors.filter(
               (doc) =>
-                doc.department?.trim().toLowerCase() ===
-                dept.title?.trim().toLowerCase()
+                doc.department.trim().toLowerCase() ===
+                dept.title.trim().toLowerCase()
             );
             if (deptDoctors.length === 0) return null;
             return (

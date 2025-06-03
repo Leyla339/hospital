@@ -38,6 +38,8 @@ const Departments = () => {
       .then((data) => setDepartments(data))
       .catch((err) => console.error("Xəta:", err));
   }, []);
+
+
   const settings = {
     infinite: true,
     speed: 600,
@@ -50,6 +52,7 @@ const Departments = () => {
     ],
   };
 
+  
   return (
     <div className="departments">
       <Slider {...settings}>

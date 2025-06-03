@@ -4,12 +4,12 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import logo from "./img/logo.svg";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
-import { AuthContext } from "./AuthContext"; // kontekstə daxil ol
+import { AuthContext } from "./AuthContext"; 
 
 const Navbar = () => {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
-  const { user, logout } = useContext(AuthContext); // istifadəçi və logout funksiyası
+  const { user, logout } = useContext(AuthContext); 
 
   return (
     <div className="navbar">
@@ -63,8 +63,8 @@ const Navbar = () => {
             </div>
 
             <div className={`mobile-nav ${menuOpen ? "open" : ""}`}>
-              <div className="close-btn" onClick={() => setMenuOpen(false)}>
-                <IoMdClose className="close-icon" />
+              <div className="nav-close-btn" onClick={() => setMenuOpen(false)}>
+                <IoMdClose className="mav-close-icon" />
               </div>
               <NavLink to="/hospital/about" onClick={() => setMenuOpen(false)}>
                 Haqqımızda

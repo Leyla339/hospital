@@ -5,8 +5,8 @@ import { LuLayoutPanelLeft } from "react-icons/lu";
 import { RiCalendarScheduleFill } from "react-icons/ri";
 import { IoFolderSharp } from "react-icons/io5";
 import { IoMdSettings } from "react-icons/io";
-import { AuthContext } from "./AuthContext";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import { AuthContext } from "./AuthContext";
 
 const Account = () => {
   const { user, logout } = useContext(AuthContext);
@@ -37,7 +37,6 @@ const Account = () => {
     navigate("/hospital/auth");
   };
 
-  if (!user) return null; // Yoxlama tamamlanana kimi heç nə göstərməmək üçün
   const handleDelete = (id) => {
     if (!window.confirm("Randevunu silmək istədiyinizə əminsiniz?")) return;
 
@@ -48,7 +47,6 @@ const Account = () => {
       }
     )
       .then((res) => {
-        if (!res.ok) throw new Error("Xəta baş verdi");
         setAppointments((prev) => prev.filter((appt) => appt.id !== id));
         toast.success("Randevu uğurla silindi");
       })
@@ -139,7 +137,6 @@ const Account = () => {
                         fontSize: "18px",
                       }}
                       title="Randevunu sil"
-                      aria-label="Randevunu sil"
                     >
                       <RiDeleteBin6Line />
                     </button>

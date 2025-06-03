@@ -45,12 +45,12 @@ const OnlineRequest = () => {
     if (name === "doctorId") {
       const selected = doctors.find((doc) => doc.id === parseInt(value));
       setSelectedDoctor(selected);
-      setAvailableDays(selected?.workingDays || []);
+      setAvailableDays(selected.workingDays || []);
       setAvailableHours([]);
       setFormData((prev) => ({
         ...prev,
         doctorId: value,
-        doctorName: selected?.name || "",
+        doctorName: selected.name || "",
         day: "",
         time: "",
       }));
